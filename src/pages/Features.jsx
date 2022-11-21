@@ -1,8 +1,9 @@
 import React from 'react';
+import { Layout } from '../common/Layout/Layout';
 
 const Features = () => {
   return (
-    <div>
+    <Layout>
       Stories Features Pricing Get an invite Features We make sure all of our
       features are designed to be loved by every aspiring and even professional
       photograpers who wanted to share their stories. 100% Responsive No matter
@@ -19,7 +20,7 @@ const Features = () => {
       friction to creating stories. We're in Beta. Get your invite today! Get an
       invite Home Stories Features Pricing Get an invite Copyright 2019. All
       Rights Reserved
-    </div>
+    </Layout>
   );
 };
 

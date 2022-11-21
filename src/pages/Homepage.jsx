@@ -1,8 +1,9 @@
 import React from 'react';
+import { Layout } from '../common/Layout/Layout';
 
 const Homepage = () => {
   return (
-    <div>
+    <Layout>
       Stories Features Pricing Get an invite Create and share your photo Stories
       Photosnap is a platform for photographers and visual storytellers. We make
       it easy to share photos, tell stories and connect with others. Beautiful
@@ -21,7 +22,7 @@ const Homepage = () => {
       Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and
       more. Home Stories Features Pricing Get an invite Copyright 2019. All
       Rights Reserved
-    </div>
+    </Layout>
   );
 };
 

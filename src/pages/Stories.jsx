@@ -1,8 +1,9 @@
 import React from 'react';
+import { Layout } from '../common/Layout/Layout';
 
 const Stories = () => {
   return (
-    <div>
+    <Layout>
       Stories Features Pricing Get an invite Last month's featured story Hazy
       full moon of Appalachia March 2nd 2020 by John Appleseed The dissected
       plateau area, while not actually made up of geological mountains, is
@@ -24,7 +25,7 @@ const Stories = () => {
       Story March 1st 2020 Somwarpet’s Beauty by Michelle Read Story February
       25th 2020 Land of Dreams by William Malcolm Read Story Home Stories
       Features Pricing Get an invite Copyright 2019. All Rights Reserved
-    </div>
+    </Layout>
   );
 };
 

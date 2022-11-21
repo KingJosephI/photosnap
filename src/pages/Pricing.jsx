@@ -1,8 +1,9 @@
 import React from 'react';
+import { Layout } from '../common/Layout/Layout';
 
 const Pricing = () => {
   return (
-    <div>
+    <Layout>
       Stories Features Pricing Get an invite Pricing Create a your stories,
       Photosnap is a platform for photographers and visual storytellers. It’s
       the simple way to create and share your photos. Monthly Yearly Basic
@@ -17,7 +18,7 @@ const Pricing = () => {
       Downloads Search Engine Indexing Custom Analytics We're in Beta. Get your
       invite today! Get an invite Home Stories Features Pricing Get an invite
       Copyright 2019. All Rights Reserved
-    </div>
+    </Layout>
   );
 };
 
