@@ -24,7 +24,7 @@ const Homepage = () => {
     <Layout>
       <main>
         <section className="services">
-          <div className="services__illustration">
+          <div className="services__illustration one">
             <picture>
               <source
                 media="(max-width:700px)"
@@ -40,7 +40,7 @@ const Homepage = () => {
               alt="Create and share illustration"
             />
           </div>
-          <div className="services__content first">
+          <div className="services__content first two">
             <h2 className="services__title">
               Create and share your photo Stories
             </h2>
@@ -59,7 +59,7 @@ const Homepage = () => {
             </div>
           </div>
 
-          <div className="services__illustration">
+          <div className="services__illustration three">
             <picture>
               <source
                 media="(max-width:700px)"
@@ -75,7 +75,7 @@ const Homepage = () => {
               alt="Create and share illustration"
             />
           </div>
-          <div className="services__content">
+          <div className="services__content four">
             <h2 className="services__title">Beautiful stories every time</h2>
             <p className="services__description">
               We provide design templates to ensure your stories look terrific.
@@ -90,7 +90,7 @@ const Homepage = () => {
             </div>
           </div>
 
-          <div className="services__illustration">
+          <div className="services__illustration five">
             <picture>
               <source
                 media="(max-width:700px)"
@@ -106,7 +106,7 @@ const Homepage = () => {
               alt="Create and share illustration"
             />
           </div>
-          <div className="services__content">
+          <div className="services__content six">
             <h2 className="services__title">Designed for everyone</h2>
             <p className="services__description">
               Photosnap can help you create stories that resonate with your

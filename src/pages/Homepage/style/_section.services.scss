@@ -22,10 +22,6 @@
   &__content.first {
     background-color: $black;
     color: $white;
-
-    // .text {
-    //   color: $white;
-    // }
   }
 
   &__title {
@@ -44,17 +40,58 @@
 
   &__illustration img {
     display: block;
+    height: 100%;
   }
 }
 
 @media screen and (min-width: rem(700)) {
   .services {
-    // display: grid;
-    // grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
 
-    // &__illustration {
-    //   width: 35%;
-    //   height: 100%;
-    // }
+    .one {
+      order: 2;
+    }
+
+    .two {
+      order: 1;
+    }
+
+    .three {
+      order: 3;
+    }
+
+    .four {
+      order: 4;
+    }
+
+    .five {
+      order: 6;
+    }
+
+    .six {
+      order: 5;
+    }
+    &__content {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-inline: rem(54);
+    }
+    &__illustration {
+      width: 40%;
+    }
+  }
+}
+@media screen and (min-width: rem(1024)) {
+  .services {
+    &__content {
+      width: 40%;
+      padding-inline: rem(112);
+    }
+    &__illustration {
+      width: 60%;
+    }
   }
 }
