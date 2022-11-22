@@ -1,0 +1,14 @@
+@use '../../styles/functions' as *;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: rem(165);
+
+  &__menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(20);
+  }
+}
