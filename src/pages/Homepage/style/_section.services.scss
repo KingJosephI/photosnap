@@ -1,27 +1,31 @@
 @use '../../../styles/' as *;
 
+.cta {
+  display: flex;
+  align-items: center;
+  gap: rem(18);
+
+  text-transform: uppercase;
+  font-size: rem(12);
+  letter-spacing: rem(2);
+  font-weight: 700;
+
+  .text {
+    color: $white;
+  }
+}
 .services {
   &__content {
     padding: rem(72) rem(33);
-
-    .cta {
-      display: flex;
-      align-items: center;
-      gap: rem(18);
-      text-transform: uppercase;
-
-      font-size: rem(12);
-      letter-spacing: rem(2);
-    }
   }
 
   &__content.first {
     background-color: $black;
     color: $white;
 
-    .text {
-      color: $white;
-    }
+    // .text {
+    //   color: $white;
+    // }
   }
 
   &__title {

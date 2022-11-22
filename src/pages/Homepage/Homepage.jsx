@@ -15,6 +15,8 @@ import ArchitecturalsImage from '../../assets/stories/desktop/architecturals.jpg
 import ResponsiveImage from '../../assets/features/desktop/responsive.svg';
 import NoLimitImage from '../../assets/features/desktop/no-limit.svg';
 import EmbedImage from '../../assets/features/desktop/embed.svg';
+import arrow from '../../assets/shared/desktop/arrow.svg';
+import whiteArrow from '../../assets/shared/desktop/arrow-white.svg';
 import './style/HomePage.scss';
 
 const Homepage = () => {
@@ -52,7 +54,7 @@ const Homepage = () => {
                 Get an invite
               </a>
               <div>
-                <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                <img src={whiteArrow} alt="" />
               </div>
             </div>
           </div>
@@ -83,7 +85,7 @@ const Homepage = () => {
             <div className="services__view-stories cta">
               <a href="#!">View the stories</a>
               <div className="footer__arrow">
-                <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                <img src={arrow} alt="" />
               </div>
             </div>
           </div>
@@ -114,71 +116,79 @@ const Homepage = () => {
             <div className="services__view-stories cta">
               <a href="#!">View the stories</a>
               <div className="footer__arrow">
-                <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                <img src={arrow} alt="" />
               </div>
             </div>
           </div>
         </section>
         <section className="stories">
-          <div>
-            <div>
+          <div className="stories__card">
+            <div className="stories__image">
               <img src={MountainsImage} alt="Mountains" />
             </div>
-            <p>
-              <h4>The Mountains</h4>
-              <strong>by John Appleseed</strong>
-              <div>
-                <a href="#!">Read Story</a>
+            <div className="stories__content">
+              <h4 className="stories__title">The Mountains</h4>
+              <strong className="stories__author">by John Appleseed</strong>
+              <div className="stories__read-story cta">
+                <a href="#!" className="text">
+                  Read Story
+                </a>
                 <div>
-                  <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                  <img src={whiteArrow} alt="" />
                 </div>
               </div>
-            </p>
+            </div>
           </div>
-          <div>
-            <div>
+          <div className="stories__card">
+            <div className="stories__image">
               <img src={CityscapesImage} alt="Sunset Cityscrapes" />
             </div>
-            <p>
-              <h4>Sunset Cityscapes</h4>
-              <strong>by Benjamin Cruz</strong>
-              <div>
-                <a href="#!">Read Story</a>
+            <div className="stories__content">
+              <h4 className="stories__title">Sunset Cityscapes</h4>
+              <strong className="stories__author">by Benjamin Cruz</strong>
+              <div className="stories__read-story cta">
+                <a href="#!" className="text">
+                  Read Story
+                </a>
                 <div>
-                  <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                  <img src={whiteArrow} alt="" />
                 </div>
               </div>
-            </p>
+            </div>
           </div>
-          <div>
-            <div>
+          <div className="stories__card">
+            <div className="stories__image">
               <img src={DaysVoyageImage} alt="18 Days Voyage" />
             </div>
-            <p>
-              <h4>18 Days Voyage</h4>
-              <strong>by Alexei Borodin</strong>
-              <div>
-                <a href="#!">Read Story</a>
+            <div className="stories__content">
+              <h4 className="stories__title">18 Days Voyage</h4>
+              <strong className="stories__author">by Alexei Borodin</strong>
+              <div className="stories__read-story cta">
+                <a href="#!" className="text">
+                  Read Story
+                </a>
                 <div>
-                  <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                  <img src={whiteArrow} alt="" />
                 </div>
               </div>
-            </p>
+            </div>
           </div>
-          <div>
-            <div>
+          <div className="stories__card">
+            <div className="stories__image">
               <img src={ArchitecturalsImage} alt="Archictecturals" />
             </div>
-            <p>
-              <h4>Architecturals</h4>
-              <strong>by Samantha Brooke</strong>
-              <div>
-                <a href="#!">Read Story</a>
+            <div className="stories__content">
+              <h4 className="stories__title">Architecturals</h4>
+              <strong className="stories__author">by Samantha Brooke</strong>
+              <div className="stories__read-story cta">
+                <a href="#!" className="text">
+                  Read Story
+                </a>
                 <div>
-                  <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                  <img src={whiteArrow} alt="" />
                 </div>
               </div>
-            </p>
+            </div>
           </div>
         </section>
         <section className="features">

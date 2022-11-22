@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import logo from '../../assets/shared/desktop/logo-footer.svg';
+import arrow from '../../assets/shared/desktop/arrow-white.svg';
 import './Footer.scss';
 
 const Footer = () => {
@@ -55,7 +56,7 @@ const Footer = () => {
           Get an invite
         </a>
         <div className="footer__arrow">
-          <i class="fa-sharp fa-solid fa-arrow-right"></i>
+          <img src={arrow} alt="" />
         </div>
       </div>
 

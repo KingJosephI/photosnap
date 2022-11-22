@@ -1,0 +1,51 @@
+@use '../../../styles/' as *;
+
+.stories {
+  &__card {
+    position: relative;
+  }
+
+  &__image img {
+    display: block;
+  }
+
+  &__title {
+    font-size: rem(18);
+    line-height: rem(25);
+    padding-block-end: rem(4);
+  }
+
+  &__content {
+    position: absolute;
+    bottom: rem(43);
+    left: rem(33);
+    right: rem(33);
+    color: $white;
+  }
+
+  &__author {
+    display: block;
+    font-size: rem(13);
+    font-weight: normal;
+    padding-block-end: rem(16);
+    border-bottom: rem(1) solid $white;
+  }
+
+  &__read-story {
+    padding-block-start: rem(20);
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: rem(700)) {
+  .stories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: rem(1024)) {
+  .stories {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
