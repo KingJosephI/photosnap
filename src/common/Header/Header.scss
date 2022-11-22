@@ -1,14 +1,75 @@
-@use '../../styles/functions' as *;
+@use '../../styles/' as *;
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-inline: rem(165);
+  padding: rem(28) rem(24);
 
   &__menu {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: rem(20);
+    display: none;
+  }
+
+  &__link,
+  &__invite-button {
+    text-transform: uppercase;
+    font-size: rem(12);
+    letter-spacing: rem(2);
+    font-weight: 700;
+  }
+
+  &__invite-button {
+    background-color: $black;
+    color: $white;
+    padding: rem(12) rem(24);
+    transition: 0.2s;
+    display: none;
+
+    &:hover {
+      background-color: $light-grey;
+      color: $black;
+    }
+  }
+
+  &__link {
+    &:hover {
+      color: rgba(128, 128, 128, 0.7);
+    }
+  }
+
+  &__hamburger {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    span {
+      display: block;
+      width: rem(40);
+      height: rem(2);
+      background-color: $black;
+      margin-bottom: rem(5);
+    }
+  }
+}
+
+@media screen and (min-width: rem(700)) {
+  .header {
+    padding-inline: rem(39);
+
+    &__menu,
+    &__invite-button {
+      display: flex;
+    }
+
+    &__hamburger {
+      display: none;
+    }
+  }
+}
+@media screen and (min-width: rem(1024)) {
+  .header {
+    padding-inline: rem(165);
   }
 }
