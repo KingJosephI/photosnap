@@ -5,6 +5,7 @@
   color: $white;
   text-align: center;
   padding: rem(56);
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,10 +64,92 @@
   &__copyright {
     color: rgba(128, 128, 128, 0.7);
   }
+}
 
-  // &__invite-text {
-  //   &:hover {
-  //     text-decoration: underline;
-  //   }
-  // }
+@media screen and (min-width: rem(700)) {
+  .footer {
+    padding: rem(64) rem(39);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    text-align: left;
+
+    &__logo {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      align-self: flex-start;
+      padding: 0;
+    }
+
+    &__menu {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      display: flex;
+      gap: rem(26);
+      align-self: start;
+    }
+
+    &__social-media {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      justify-content: start;
+      padding-block: 0;
+      padding-block-start: rem(72);
+    }
+
+    li:has(.footer__link):not(:last-of-type) {
+      padding-block-end: 0;
+    }
+
+    &__invite {
+      margin-block: 0;
+      grid-column: 2/3;
+      grid-row: 1/2;
+      justify-self: end;
+      align-self: start;
+      padding: 0;
+    }
+
+    &__copyright {
+      grid-column: 2/3;
+      grid-row: 3/4;
+      justify-self: end;
+      padding-block-start: rem(72);
+    }
+  }
+}
+
+@media screen and (min-width: rem(1024)) {
+  .footer {
+    padding: rem(64) rem(165);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    &__logo {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+
+    &__menu {
+      grid-column: 2/3;
+      grid-row: 1/3;
+      flex-direction: column;
+    }
+
+    &__social-media {
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+
+    &__invite {
+      grid-column: 3/4;
+      grid-row: 1/2;
+    }
+
+    &__copyright {
+      grid-column: 3/4;
+      grid-row: 2/3;
+    }
+  }
 }
