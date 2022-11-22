@@ -1,54 +1,67 @@
 import { NavLink } from 'react-router-dom';
-import logo from '../../assets/shared/desktop/logo.svg';
+import './Footer.scss';
+import logo from '../../assets/shared/desktop/logo-footer.svg';
 
 const Footer = () => {
   return (
-    <footer>
-      <div>
+    <footer className="footer">
+      <div className="footer__logo">
         <img src={logo} alt="logo" />
       </div>
 
-      <div className="social-media">
-        <div>
+      <div className="footer__social-media">
+        <div className="footer__icon">
           <i class="fa-brands fa-square-facebook"></i>
         </div>
-        <div>
+        <div className="footer__icon">
           <i class="fa-brands fa-youtube"></i>
         </div>
-        <div>
+        <div className="footer__icon">
           <i class="fa-brands fa-twitter"></i>
         </div>
-        <div>
+        <div className="footer__icon">
           <i class="fa-brands fa-pinterest"></i>
         </div>
-        <div>
+        <div className="footer__icon">
           <i class="fa-brands fa-instagram"></i>
         </div>
       </div>
 
-      <ul>
+      <ul className="footer__menu">
         <li>
-          <NavLink>Home</NavLink>
+          <NavLink to="/" className="footer__link">
+            Home
+          </NavLink>
         </li>
         <li>
-          <NavLink>Stories</NavLink>
+          <NavLink to="/stories" className="footer__link">
+            Stories
+          </NavLink>
         </li>
         <li>
-          <NavLink>Features</NavLink>
+          <NavLink to="/features" className="footer__link">
+            Features
+          </NavLink>
         </li>
         <li>
-          <NavLink>Pricing</NavLink>
+          <NavLink to="/pricing" className="footer__link">
+            Pricing
+          </NavLink>
         </li>
       </ul>
 
-      <div>
-        <a href="#">Get an invite</a>
-        <div>
+      <div className="footer__invite">
+        <a href="#!" className="footer__invite-text">
+          Get an invite
+        </a>
+        <div className="footer__arrow">
           <i class="fa-sharp fa-solid fa-arrow-right"></i>
         </div>
       </div>
 
-      <div>Copyright 2019. AllRights Reserved</div>
+      <div className="footer__copyright">
+        Copyright 2019. AllRights Reserved
+      </div>
     </footer>
   );
 };

@@ -1,0 +1,72 @@
+@use '../../styles/' as *;
+
+.footer {
+  background-color: $black;
+  color: $white;
+  text-align: center;
+  padding: rem(56);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__social-media {
+    display: flex;
+    justify-content: center;
+    gap: rem(10);
+    padding-block: rem(32) rem(24);
+
+    i {
+      font-size: rem(20);
+
+      &:hover {
+        cursor: pointer;
+        background: $main-accent;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+
+  li:has(.footer__link):not(:last-of-type) {
+    padding-block-end: rem(19);
+  }
+
+  &__link,
+  &__invite-text {
+    font-size: rem(12);
+    font-weight: 700;
+    letter-spacing: rem(2);
+    color: $white;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    transition: 0.2s;
+
+    &:hover {
+      color: rgba(128, 128, 128, 0.7);
+    }
+  }
+
+  &__invite {
+    margin-block: rem(119) rem(34);
+    display: flex;
+    gap: rem(22);
+    transition: 0.2s;
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+
+  &__copyright {
+    color: rgba(128, 128, 128, 0.7);
+  }
+
+  // &__invite-text {
+  //   &:hover {
+  //     text-decoration: underline;
+  //   }
+  // }
+}

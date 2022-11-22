@@ -1,10 +1,8 @@
 import { NavLink } from 'react-router-dom';
 import logo from '../../assets/shared/desktop/logo.svg';
 import './Header.scss';
+
 const Header = () => {
-  // const activeStyle = {
-  //   color: 'red',
-  // };
   return (
     <header className="header">
       <div className="header__logo">
@@ -47,7 +45,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <a className="header__invite-button" href="!#">
+      <a className="header__invite-button" href="#!">
         Get an invite
       </a>
 
