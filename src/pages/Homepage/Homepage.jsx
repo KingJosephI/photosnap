@@ -8,16 +8,18 @@ import BeautifulStoryImage__mobile from '../../assets/home/mobile/beautiful-stor
 import DesignEveryOneImage__desktop from '../../assets/home/desktop/designed-for-everyone.jpg';
 import DesignEveryOneImage__tablet from '../../assets/home/tablet/designed-for-everyone.jpg';
 import DesignEveryOneImage__mobile from '../../assets/home/mobile/designed-for-everyone.jpg';
-import MountainsImage from '../../assets/stories/desktop/mountains.jpg';
-import CityscapesImage from '../../assets/stories/desktop/cityscapes.jpg';
-import DaysVoyageImage from '../../assets/stories/desktop/18-days-voyage.jpg';
-import ArchitecturalsImage from '../../assets/stories/desktop/architecturals.jpg';
+// import MountainsImage from '../../assets/stories/desktop/mountains.jpg';
+// import CityscapesImage from '../../assets/stories/desktop/cityscapes.jpg';
+// import DaysVoyageImage from '../../assets/stories/desktop/18-days-voyage.jpg';
+// import ArchitecturalsImage from '../../assets/stories/desktop/architecturals.jpg';
 import ResponsiveImage from '../../assets/features/desktop/responsive.svg';
 import NoLimitImage from '../../assets/features/desktop/no-limit.svg';
 import EmbedImage from '../../assets/features/desktop/embed.svg';
 import arrow from '../../assets/shared/desktop/arrow.svg';
 import whiteArrow from '../../assets/shared/desktop/arrow-white.svg';
 import './style/HomePage.scss';
+import Stories from './components/Stories/Stories';
+// import Story from '../../common/Story/Story';
 
 const Homepage = () => {
   return (
@@ -121,76 +123,8 @@ const Homepage = () => {
             </div>
           </div>
         </section>
-        <section className="stories">
-          <div className="stories__card">
-            <div className="stories__image">
-              <img src={MountainsImage} alt="Mountains" />
-            </div>
-            <div className="stories__content">
-              <h4 className="stories__title">The Mountains</h4>
-              <strong className="stories__author">by John Appleseed</strong>
-              <div className="stories__read-story cta">
-                <a href="#!" className="text">
-                  Read Story
-                </a>
-                <div>
-                  <img src={whiteArrow} alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="stories__card">
-            <div className="stories__image">
-              <img src={CityscapesImage} alt="Sunset Cityscrapes" />
-            </div>
-            <div className="stories__content">
-              <h4 className="stories__title">Sunset Cityscapes</h4>
-              <strong className="stories__author">by Benjamin Cruz</strong>
-              <div className="stories__read-story cta">
-                <a href="#!" className="text">
-                  Read Story
-                </a>
-                <div>
-                  <img src={whiteArrow} alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="stories__card">
-            <div className="stories__image">
-              <img src={DaysVoyageImage} alt="18 Days Voyage" />
-            </div>
-            <div className="stories__content">
-              <h4 className="stories__title">18 Days Voyage</h4>
-              <strong className="stories__author">by Alexei Borodin</strong>
-              <div className="stories__read-story cta">
-                <a href="#!" className="text">
-                  Read Story
-                </a>
-                <div>
-                  <img src={whiteArrow} alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="stories__card">
-            <div className="stories__image">
-              <img src={ArchitecturalsImage} alt="Archictecturals" />
-            </div>
-            <div className="stories__content">
-              <h4 className="stories__title">Architecturals</h4>
-              <strong className="stories__author">by Samantha Brooke</strong>
-              <div className="stories__read-story cta">
-                <a href="#!" className="text">
-                  Read Story
-                </a>
-                <div>
-                  <img src={whiteArrow} alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Stories />
+
         <section className="features">
           <div className="card">
             <div className="card__image">

@@ -1,0 +1,36 @@
+@use '../../styles/' as *;
+
+.card {
+  position: relative;
+
+  &__image img {
+    display: block;
+  }
+
+  &__content {
+    position: absolute;
+    bottom: rem(43);
+    left: rem(33);
+    right: rem(33);
+    color: $white;
+  }
+
+  &__title {
+    font-size: rem(18);
+    line-height: rem(25);
+    padding-block-end: rem(4);
+  }
+
+  &__author {
+    display: block;
+    font-size: rem(13);
+    font-weight: normal;
+    padding-block-end: rem(16);
+    border-bottom: rem(1) solid $white;
+  }
+
+  &__read-story {
+    padding-block-start: rem(20);
+    justify-content: space-between;
+  }
+}
