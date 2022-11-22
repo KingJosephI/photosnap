@@ -1,0 +1,44 @@
+@use '../../../styles/' as *;
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: rem((56));
+  padding: rem(80) rem(44);
+
+  .card {
+    text-align: center;
+    padding-bottom: 0;
+
+    &__title {
+      padding-block: rem(48) rem(16);
+      font-size: rem(18);
+      line-height: rem(25);
+    }
+
+    &__description {
+      font-size: rem(15);
+      line-height: rem(25);
+      color: hsla(0, 0%, 0%, 0.5);
+    }
+
+    &__image {
+      width: rem(72);
+      height: rem(72);
+      aspect-ratio: 1/1;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (min-width: rem(700)) {
+  .features {
+    padding-block: rem(120);
+  }
+}
+@media screen and (min-width: rem(1024)) {
+  .features {
+    padding-inline: rem(165);
+    flex-direction: row;
+  }
+}

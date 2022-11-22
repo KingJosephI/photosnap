@@ -119,7 +119,7 @@ const Homepage = () => {
             </div>
           </div>
         </section>
-        <section>
+        <section className="stories">
           <div>
             <div>
               <img src={MountainsImage} alt="Mountains" />
@@ -181,35 +181,35 @@ const Homepage = () => {
             </p>
           </div>
         </section>
-        <section>
-          <div>
-            <div>
+        <section className="features">
+          <div className="card">
+            <div className="card__image">
               <img src={ResponsiveImage} alt="Responsive 100 Illustration" />
             </div>
-            <h2>100% Responsive</h2>
-            <p>
+            <h2 className="card__title">100% Responsive</h2>
+            <p className="card__description">
               No matter which the device you’re on, our site is fully responsive
               and stories look beautiful on any screen.
             </p>
           </div>
-          <div>
-            <div>
+          <div className="card">
+            <div className="card__image">
               <img src={NoLimitImage} alt="No Limit Illustration" />
             </div>
 
-            <h2>No Photo Upload Limit</h2>
-            <p>
+            <h2 className="card__title">No Photo Upload Limit</h2>
+            <p className="card__description">
               Our tool has no limits on uploads or bandwidth. Freely upload in
               bulk and share all of your stories in one go.
             </p>
           </div>
-          <div>
-            <div>
+          <div className="card">
+            <div className="card__image">
               <img src={EmbedImage} alt="Embed illustration" />
             </div>
 
-            <h2>Available to Embed</h2>
-            <p>
+            <h2 className="card__title">Available to Embed</h2>
+            <p className="card__description">
               Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube
               videos, Google Maps, and more.
             </p>
