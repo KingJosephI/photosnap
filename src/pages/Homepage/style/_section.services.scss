@@ -1,0 +1,51 @@
+@use '../../../styles/' as *;
+
+.services {
+  &__content {
+    padding: rem(72) rem(33);
+
+    .cta {
+      display: flex;
+      align-items: center;
+      gap: rem(18);
+      text-transform: uppercase;
+
+      font-size: rem(12);
+      letter-spacing: rem(2);
+    }
+  }
+
+  &__content.first {
+    background-color: $black;
+    color: $white;
+
+    .text {
+      color: $white;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: rem(32);
+    line-height: rem(40);
+    letter-spacing: rem(3.33);
+    text-transform: uppercase;
+  }
+
+  &__description {
+    font-size: rem(15);
+    line-height: rem(25);
+    padding-block: rem(16) rem(23);
+  }
+
+  &__illustration img {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 700) {
+  .services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

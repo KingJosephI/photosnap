@@ -1,40 +1,28 @@
-import { Layout } from '../common/Layout/Layout';
-import CreateShareImage__desktop from '../assets/home/desktop/create-and-share.jpg';
-import CreateShareImage__tablet from '../assets/home/tablet/create-and-share.jpg';
-import CreateShareImage__mobile from '../assets/home/mobile/create-and-share.jpg';
-import BeautifulStoryImage__desktop from '../assets/home/desktop/beautiful-stories.jpg';
-import BeautifulStoryImage__tablet from '../assets/home/tablet/beautiful-stories.jpg';
-import BeautifulStoryImage__mobile from '../assets/home/mobile/beautiful-stories.jpg';
-import DesignEveryOneImage__desktop from '../assets/home/desktop/designed-for-everyone.jpg';
-import DesignEveryOneImage__tablet from '../assets/home/tablet/designed-for-everyone.jpg';
-import DesignEveryOneImage__mobile from '../assets/home/mobile/designed-for-everyone.jpg';
-import MountainsImage from '../assets/stories/desktop/mountains.jpg';
-import CityscapesImage from '../assets/stories/desktop/cityscapes.jpg';
-import DaysVoyageImage from '../assets/stories/desktop/18-days-voyage.jpg';
-import ArchitecturalsImage from '../assets/stories/desktop/architecturals.jpg';
-import ResponsiveImage from '../assets/features/desktop/responsive.svg';
-import NoLimitImage from '../assets/features/desktop/no-limit.svg';
-import EmbedImage from '../assets/features/desktop/embed.svg';
+import { Layout } from '../../common/Layout/Layout';
+import CreateShareImage__desktop from '../../assets/home/desktop/create-and-share.jpg';
+import CreateShareImage__tablet from '../../assets/home/tablet/create-and-share.jpg';
+import CreateShareImage__mobile from '../../assets/home/mobile/create-and-share.jpg';
+import BeautifulStoryImage__desktop from '../../assets/home/desktop/beautiful-stories.jpg';
+import BeautifulStoryImage__tablet from '../../assets/home/tablet/beautiful-stories.jpg';
+import BeautifulStoryImage__mobile from '../../assets/home/mobile/beautiful-stories.jpg';
+import DesignEveryOneImage__desktop from '../../assets/home/desktop/designed-for-everyone.jpg';
+import DesignEveryOneImage__tablet from '../../assets/home/tablet/designed-for-everyone.jpg';
+import DesignEveryOneImage__mobile from '../../assets/home/mobile/designed-for-everyone.jpg';
+import MountainsImage from '../../assets/stories/desktop/mountains.jpg';
+import CityscapesImage from '../../assets/stories/desktop/cityscapes.jpg';
+import DaysVoyageImage from '../../assets/stories/desktop/18-days-voyage.jpg';
+import ArchitecturalsImage from '../../assets/stories/desktop/architecturals.jpg';
+import ResponsiveImage from '../../assets/features/desktop/responsive.svg';
+import NoLimitImage from '../../assets/features/desktop/no-limit.svg';
+import EmbedImage from '../../assets/features/desktop/embed.svg';
+import './style/HomePage.scss';
+
 const Homepage = () => {
   return (
     <Layout>
       <main>
-        <section>
-          <div>
-            <h2>Create and share your photo Stories</h2>
-            <p>
-              Photosnap is a platform for photographers and visual storytellers.
-              We make it easy to share photos, tell stories and connect with
-              others.
-            </p>
-            <div>
-              <a href="#!">Get an invite</a>
-              <div>
-                <i class="fa-sharp fa-solid fa-arrow-right"></i>
-              </div>
-            </div>
-          </div>
-          <div>
+        <section className="services">
+          <div className="services__illustration">
             <picture>
               <source
                 media="(max-width:700px)"
@@ -50,9 +38,26 @@ const Homepage = () => {
               alt="Create and share illustration"
             />
           </div>
-        </section>
-        <section>
-          <div>
+          <div className="services__content first">
+            <h2 className="services__title">
+              Create and share your photo Stories
+            </h2>
+            <p className="services__description">
+              Photosnap is a platform for photographers and visual storytellers.
+              We make it easy to share photos, tell stories and connect with
+              others.
+            </p>
+            <div className="services__get-invite cta">
+              <a href="#!" className="text">
+                Get an invite
+              </a>
+              <div>
+                <i class="fa-sharp fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <div className="services__illustration">
             <picture>
               <source
                 media="(max-width:700px)"
@@ -68,37 +73,22 @@ const Homepage = () => {
               alt="Create and share illustration"
             />
           </div>
-          <div>
-            <h2>Beautiful stories every time</h2>
-            <p>
+          <div className="services__content">
+            <h2 className="services__title">Beautiful stories every time</h2>
+            <p className="services__description">
               We provide design templates to ensure your stories look terrific.
               Easily add photos, text, embed maps and media from other networks.
               Then share your story with everyone.
             </p>
-            <div>
+            <div className="services__view-stories cta">
               <a href="#!">View the stories</a>
               <div className="footer__arrow">
                 <i class="fa-sharp fa-solid fa-arrow-right"></i>
               </div>
             </div>
           </div>
-        </section>
-        <section>
-          <div>
-            <h2>Designed for everyone</h2>
-            <p>
-              Photosnap can help you create stories that resonate with your
-              audience. Our tool is designed for photographers of all levels,
-              brands, businesses you name it.
-            </p>
-            <div>
-              <a href="#!">View the stories</a>
-              <div className="footer__arrow">
-                <i class="fa-sharp fa-solid fa-arrow-right"></i>
-              </div>
-            </div>
-          </div>
-          <div>
+
+          <div className="services__illustration">
             <picture>
               <source
                 media="(max-width:700px)"
@@ -113,6 +103,20 @@ const Homepage = () => {
               src={DesignEveryOneImage__desktop}
               alt="Create and share illustration"
             />
+          </div>
+          <div className="services__content">
+            <h2 className="services__title">Designed for everyone</h2>
+            <p className="services__description">
+              Photosnap can help you create stories that resonate with your
+              audience. Our tool is designed for photographers of all levels,
+              brands, businesses you name it.
+            </p>
+            <div className="services__view-stories cta">
+              <a href="#!">View the stories</a>
+              <div className="footer__arrow">
+                <i class="fa-sharp fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
           </div>
         </section>
         <section>
@@ -177,7 +181,6 @@ const Homepage = () => {
             </p>
           </div>
         </section>
-
         <section>
           <div>
             <div>
