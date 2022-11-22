@@ -20,8 +20,7 @@ const Homepage = () => {
       Our tool has no limits on uploads or bandwidth. Freely upload in bulk and
       share all of your stories in one go. Available to Embed Embed Tweets,
       Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and
-      more. Home Stories Features Pricing Get an invite Copyright 2019. All
-      Rights Reserved
+      more.
     </Layout>
   );
 };
