@@ -1,6 +1,6 @@
-import Landing from './components/Landing/Landing';
 import { Layout, Stories } from '../../common';
-import { stories } from './data/stories';
+import { Landing } from './components';
+import { stories } from './data';
 
 const StoriesPage = () => {
   return (

@@ -1,4 +1,4 @@
-import { Layout } from '../common';
+import { Layout } from '../../common';
 
 const Pricing = () => {
   return (

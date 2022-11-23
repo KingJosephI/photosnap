@@ -12,9 +12,11 @@
     padding-block: rem(120);
   }
 }
+
 @media screen and (min-width: rem(1024)) {
   .features {
     padding-inline: rem(165);
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
