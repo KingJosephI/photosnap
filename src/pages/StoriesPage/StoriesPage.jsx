@@ -1,6 +1,5 @@
-import { Layout } from '../../common/Layout/Layout';
-import Stories from '../../common/Stories/Stories';
 import Landing from './components/Landing/Landing';
+import { Layout, Stories } from '../../common';
 import { stories } from './data/stories';
 
 const StoriesPage = () => {
