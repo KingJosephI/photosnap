@@ -1,5 +1,6 @@
-import { Features, Layout } from '../../common';
+import { Features, Layout, BetaSection } from '../../common';
 import { features } from './data';
+import './Features.scss';
 
 const FeaturesPage = () => {
   return (
@@ -19,10 +20,7 @@ const FeaturesPage = () => {
       </section>
 
       <Features data={features} />
-      <section>
-        We're in Beta. Get your invite today! Get an invite Home Stories
-        Features Pricing Get an invite Copyright 2019. All Rights Reserved
-      </section>
+      <BetaSection />
     </Layout>
   );
 };

@@ -1,0 +1,75 @@
+@use '../../styles/' as *;
+
+// .beta {
+//   padding-inline: rem(32);
+//   padding-block-end: rem(70);
+//   background-image: url('../../assets/shared/mobile/bg-beta.jpg');
+//   background-repeat: no-repeat;
+//   background-size: cover;
+
+//   &__title {
+//     font-size: rem(32);
+//     line-height: rem(40);
+//     letter-spacing: rem(3.33);
+//     font-weight: 700;
+//     text-transform: uppercase;
+//     color: $white;
+//     width: rem(350);
+
+//     padding-block: rem(70) rem(24);
+//     position: relative;
+
+//     &::before {
+//       content: '';
+//       width: rem(150);
+//       height: rem(6);
+//       background: $main-accent;
+//       position: absolute;
+//       top: 0;
+//     }
+//   }
+
+//   .cta {
+//     justify-content: start;
+//   }
+// }
+
+// @media screen and (min-width: rem(700)) {
+//   .beta {
+//     padding: rem(77) rem(39);
+//     background-image: url('../../assets/shared/tablet/bg-beta.jpg');
+
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//     align-items: center;
+
+//     &__title {
+//       padding-block-start: 0;
+
+//       &::before {
+//         content: none;
+//       }
+//     }
+
+//     .cta {
+//       justify-self: end;
+//     }
+//   }
+// }
+
+// @media screen and (min-width: rem(1024)) {
+//   .beta {
+//     padding-inline: rem(165);
+//     background-image: url('../../assets/shared/desktop/bg-beta.jpg');
+
+//     &__title {
+//       font-size: rem(40);
+//       line-height: rem(48);
+//       letter-spacing: rem(4.17);
+//     }
+
+//     // &::before {
+//     //   width: 0;
+//     // }
+//   }
+// }
