@@ -14,6 +14,7 @@ import milkyWay from '../../../assets/stories/desktop/milky-way.jpg';
 import darkForest from '../../../assets/stories/desktop/dark-forest.jpg';
 import somwarpet from '../../../assets/stories/desktop/somwarpet.jpg';
 import landDreams from '../../../assets/stories/desktop/land-of-dreams.jpg';
+
 export const stories = [
   {
     id: 1,

@@ -1,0 +1,81 @@
+@use '../../../../styles/' as *;
+
+.landing {
+  background-color: $black;
+  color: $white;
+
+  &__image {
+    img {
+      display: block;
+    }
+  }
+
+  &__content {
+    padding: rem(48) rem(29);
+  }
+
+  &__featured-story {
+    font-size: rem(12);
+    font-weight: 700;
+    letter-spacing: rem(2);
+    text-transform: uppercase;
+  }
+
+  &__title {
+    font-size: rem(32);
+    line-height: rem(40);
+    letter-spacing: rem(3.33);
+    text-transform: uppercase;
+    padding-block: rem(16);
+  }
+
+  &__meta-info {
+    font-size: rem(13);
+  }
+  &__date {
+    padding-inline-end: rem(20);
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  &__author {
+    font-weight: normal;
+  }
+
+  &__description {
+    padding-block: rem(24);
+    font-size: rem(15);
+    line-height: rem(25);
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .cta {
+    justify-content: start;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: rem(700)) {
+  .landing {
+    position: relative;
+    //  &__content {
+    //     padding: rem(48) rem(29);
+    //   }
+    &__content {
+      background-color: transparent;
+      position: absolute;
+
+      padding: 0;
+      top: rem(123);
+      left: rem(40);
+      bottom: rem(122);
+    }
+  }
+}
+@media screen and (min-width: rem(1024)) {
+  .landing {
+    &__content {
+      top: rem(112);
+      left: rem(112);
+      width: rem(500);
+    }
+  }
+}

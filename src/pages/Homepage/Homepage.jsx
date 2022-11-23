@@ -8,10 +8,6 @@ import BeautifulStoryImage__mobile from '../../assets/home/mobile/beautiful-stor
 import DesignEveryOneImage__desktop from '../../assets/home/desktop/designed-for-everyone.jpg';
 import DesignEveryOneImage__tablet from '../../assets/home/tablet/designed-for-everyone.jpg';
 import DesignEveryOneImage__mobile from '../../assets/home/mobile/designed-for-everyone.jpg';
-// import MountainsImage from '../../assets/stories/desktop/mountains.jpg';
-// import CityscapesImage from '../../assets/stories/desktop/cityscapes.jpg';
-// import DaysVoyageImage from '../../assets/stories/desktop/18-days-voyage.jpg';
-// import ArchitecturalsImage from '../../assets/stories/desktop/architecturals.jpg';
 import ResponsiveImage from '../../assets/features/desktop/responsive.svg';
 import NoLimitImage from '../../assets/features/desktop/no-limit.svg';
 import EmbedImage from '../../assets/features/desktop/embed.svg';
