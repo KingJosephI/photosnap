@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import Features from './pages/Features';
 import Homepage from './pages/Homepage/Homepage';
 import Pricing from './pages/Pricing';
-import Stories from './pages/Stories';
+import Stories from './pages/StoriesPage/StoriesPage';
 
 function App() {
   return (

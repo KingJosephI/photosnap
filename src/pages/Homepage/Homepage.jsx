@@ -16,9 +16,11 @@ import ResponsiveImage from '../../assets/features/desktop/responsive.svg';
 import NoLimitImage from '../../assets/features/desktop/no-limit.svg';
 import EmbedImage from '../../assets/features/desktop/embed.svg';
 import arrow from '../../assets/shared/desktop/arrow.svg';
+import Stories from '../../common/Stories/Stories';
 import whiteArrow from '../../assets/shared/desktop/arrow-white.svg';
+import { stories } from './data/homestories';
 import './style/HomePage.scss';
-import Stories from './components/Stories/Stories';
+
 // import Story from '../../common/Story/Story';
 
 const Homepage = () => {
@@ -123,7 +125,7 @@ const Homepage = () => {
             </div>
           </div>
         </section>
-        <Stories />
+        <Stories data={stories} />
 
         <section className="features">
           <div className="card">
