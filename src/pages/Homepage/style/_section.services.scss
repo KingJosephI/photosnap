@@ -21,6 +21,7 @@
 
   &__content.first {
     background-color: $black;
+
     color: $white;
   }
 
@@ -36,6 +37,11 @@
     font-size: rem(15);
     line-height: rem(25);
     padding-block: rem(16) rem(23);
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .first &__description {
+    color: rgba(255, 255, 255, 0.6);
   }
 
   &__illustration img {
