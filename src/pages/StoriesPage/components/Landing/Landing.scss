@@ -56,17 +56,22 @@
 @media screen and (min-width: rem(700)) {
   .landing {
     position: relative;
-    //  &__content {
-    //     padding: rem(48) rem(29);
-    //   }
+
     &__content {
       background-color: transparent;
-      position: absolute;
-
       padding: 0;
-      top: rem(123);
+      width: rem(500);
+
+      position: absolute;
+      // top: clamp(rem(70), rem(50), rem(123));
+      top: clamp(rem(70), rem(50), rem(123));
+      top: rem(50);
       left: rem(40);
       bottom: rem(122);
+    }
+
+    &__description {
+      padding-block: 0;
     }
   }
 }
@@ -75,7 +80,10 @@
     &__content {
       top: rem(112);
       left: rem(112);
-      width: rem(500);
+    }
+
+    &__description {
+      padding-block: rem(24);
     }
   }
 }
