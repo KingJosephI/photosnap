@@ -1,0 +1,30 @@
+@use '../../../../styles/' as *;
+
+.prices {
+  padding: rem(64) rem(29);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: rem(24);
+
+  &__plans {
+    display: flex;
+    flex-direction: column;
+    gap: rem(24);
+  }
+}
+
+@media screen and (min-width: rem(700)) {
+  .prices {
+  }
+}
+@media screen and (min-width: rem(1024)) {
+  .prices {
+    padding: rem(165) rem(120);
+
+    &__plans {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+}

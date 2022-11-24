@@ -1,6 +1,6 @@
 import { BetaSection, Hero, Layout } from '../../common';
 import heroImage from '../../assets/pricing/desktop/hero.jpg';
-import PricingPlans from './components/PricingPlans/PricingPlans';
+import { PricingPlans } from './components';
 
 const Pricing = () => {
   const title = 'Pricing';

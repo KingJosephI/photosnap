@@ -1,4 +1,13 @@
-@use '../../../../styles' as *;
+@use '../../../../../styles' as *;
+
+.toggle {
+  display: flex;
+  justify-content: center;
+  gap: rem(24);
+  & > * {
+    display: block;
+  }
+}
 
 /* The switch - the box around the slider */
 .switch {
@@ -42,10 +51,12 @@
 
 input:checked + .slider {
   background-color: #2196f3;
+  background-color: $black;
 }
 
 input:focus + .slider {
   box-shadow: 0 0 1px #2196f3;
+  box-shadow: 0 0 1px $black;
 }
 
 input:checked + .slider:before {

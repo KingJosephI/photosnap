@@ -2,13 +2,13 @@ import './Toggle.scss';
 
 const Toggle = () => {
   return (
-    <div>
-      <span>Monthly</span>
-      <label class="switch">
+    <div className="toggle">
+      <span className="toggle__month">Monthly</span>
+      <label class="toogle__switch switch">
         <input type="checkbox" />
         <span class="slider round"></span>
       </label>
-      <span>Yearly</span>
+      <span className="toggle__month">Yearly</span>
     </div>
   );
 };

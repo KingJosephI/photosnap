@@ -1,0 +1,37 @@
+@use '../../../../../styles/' as *;
+
+.card-black {
+  background-color: $black;
+  color: $white;
+  padding-inline: 0;
+
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: rem(6);
+    background: $main-accent;
+    position: absolute;
+    top: 0;
+  }
+
+  & > * {
+    padding-inline: rem(31);
+  }
+
+  .pick-plan-black {
+    display: block;
+    background-color: $white;
+    color: $black;
+    margin: 0 rem(31);
+
+    &:hover {
+      background-color: $light-grey;
+    }
+  }
+}
