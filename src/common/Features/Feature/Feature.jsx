@@ -5,7 +5,7 @@ const Feature = ({ title = '', description = '', image = '' }) => {
   return (
     <div className="feature">
       <div className="feature__image">
-        <img src={image} alt={title} />
+        <img src={image} alt={title} loading="lazy" />
       </div>
       <h2 className="feature__title">{title}</h2>
       <p className="feature__description">{description}</p>

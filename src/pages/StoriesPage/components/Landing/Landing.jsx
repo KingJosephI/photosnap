@@ -6,7 +6,7 @@ const Landing = () => {
   return (
     <section className="landing">
       <div className="landing__image">
-        <img src={moon} alt="" />
+        <img src={moon} alt="" loading="lazy" />
       </div>
       <div className="landing__content">
         <span className="landing__featured-story">
@@ -28,7 +28,7 @@ const Landing = () => {
             Read Story
           </a>
           <div>
-            <img src={whiteArrow} alt="" />
+            <img src={whiteArrow} alt="" loading="lazy" />
           </div>
         </div>
       </div>
