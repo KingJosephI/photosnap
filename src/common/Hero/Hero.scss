@@ -4,6 +4,7 @@
   &__illustration {
     img {
       display: block;
+      height: 100%;
     }
   }
 
@@ -36,5 +37,43 @@
     font-size: rem(15);
     line-height: rem(25);
     color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+@media screen and (min-width: rem(700)) {
+  .hero {
+    display: flex;
+
+    &__illustration {
+      order: 2;
+      width: 40%;
+    }
+    &__content {
+      order: 1;
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-inline: rem(112);
+    }
+
+    &__title {
+      &::before {
+        content: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: rem(1024)) {
+  .hero {
+    &__content {
+      padding-inline: rem(112);
+      width: 40%;
+    }
+
+    &__illustration {
+      width: 60%;
+    }
   }
 }
