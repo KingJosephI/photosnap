@@ -29,7 +29,9 @@ const Header = () => {
             <NavLink
               className="header__link"
               to="/features"
-              style={({ isActive }) => ({ color: isActive ? 'grey' : 'black' })}
+              style={({ isActive }) => ({
+                color: isActive ? 'rgba(0,0,0,0.6)' : 'black',
+              })}
             >
               Features
             </NavLink>

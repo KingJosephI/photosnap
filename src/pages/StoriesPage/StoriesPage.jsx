@@ -1,7 +1,6 @@
-import { Layout } from '../../common/Layout/Layout';
-import Stories from '../../common/Stories/Stories';
-import Landing from './components/Landing/Landing';
-import { stories } from './data/stories';
+import { Layout, Stories } from '../../common';
+import { Landing } from './components';
+import { stories } from './data';
 
 const StoriesPage = () => {
   return (

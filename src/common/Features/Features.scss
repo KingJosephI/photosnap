@@ -1,0 +1,22 @@
+@use '../../styles/' as *;
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: rem((56));
+  padding: rem(80) rem(44);
+}
+
+@media screen and (min-width: rem(700)) {
+  .features {
+    padding-block: rem(120);
+  }
+}
+
+@media screen and (min-width: rem(1024)) {
+  .features {
+    padding-inline: rem(165);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
