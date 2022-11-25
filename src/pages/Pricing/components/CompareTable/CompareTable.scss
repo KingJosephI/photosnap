@@ -1,0 +1,55 @@
+@use '../../../../styles/' as *;
+
+.compare-table {
+  padding-block-end: rem(112);
+
+  &__title {
+    text-align: center;
+    font-size: rem(40);
+    line-height: rem(48);
+    letter-spacing: rem(4.17);
+    text-transform: uppercase;
+    padding-block-end: rem(64);
+  }
+  &__check {
+    width: rem(16);
+  }
+
+  &__content {
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+
+  thead tr {
+    border-bottom: rem(2) solid $black;
+  }
+  tbody tr {
+    border-bottom: rem(1) solid $light-grey;
+  }
+
+  td,
+  th {
+    font-size: rem(12);
+    letter-spacing: rem(2);
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-block: rem(10);
+  }
+
+  td {
+    width: rem(200);
+    text-align: left;
+
+    &:not(:first-of-type) {
+      text-align: center;
+    }
+  }
+
+  th {
+    text-align: center;
+    &:first-of-type {
+      text-align: left;
+      width: rem(300);
+    }
+  }
+}

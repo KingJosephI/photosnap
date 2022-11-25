@@ -1,6 +1,6 @@
 import { BetaSection, Hero, Layout } from '../../common';
 import heroImage from '../../assets/pricing/desktop/hero.jpg';
-import { PricingPlans } from './components';
+import { PricingPlans, CompareTable } from './components';
 
 const Pricing = () => {
   const title = 'Pricing';
@@ -11,9 +11,8 @@ const Pricing = () => {
     <Layout>
       <Hero title={title} description={description} illustration={heroImage} />
       <PricingPlans />
-      Compare The Features Basic Pro Business Unlimited Story Posting Unlimited
-      Photo Upload Embedding Custom Content Customize Metadata Advanced Metrics
-      Photo Downloads Search Engine Indexing Custom Analytics
+      <CompareTable />
+
       <BetaSection />
     </Layout>
   );
