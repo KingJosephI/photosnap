@@ -1,6 +1,6 @@
 import { BetaSection, Hero, Layout } from '../../common';
 import heroImage from '../../assets/pricing/desktop/hero.jpg';
-import { PricingPlans, CompareTable } from './components';
+import { PricingPlans, CompareTable, MobileTable } from './components';
 
 const Pricing = () => {
   const title = 'Pricing';
@@ -12,7 +12,7 @@ const Pricing = () => {
       <Hero title={title} description={description} illustration={heroImage} />
       <PricingPlans />
       <CompareTable />
-
+      <MobileTable />
       <BetaSection />
     </Layout>
   );

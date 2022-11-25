@@ -5,11 +5,7 @@ const Hero = ({ title = '', description = '', illustration = '' }) => {
   return (
     <section className="hero">
       <div className="hero__illustration">
-        <img
-          src={illustration}
-          alt="Create and share illustration"
-          loading="lazy"
-        />
+        <img src={illustration} alt="Create and share illustration" />
       </div>
       <div className="hero__content">
         <h1 className="hero__title">{title}</h1>
