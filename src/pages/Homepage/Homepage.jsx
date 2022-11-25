@@ -3,7 +3,7 @@ import { Services } from './components';
 import { Layout, Stories, Features } from '../../common';
 import { stories, features } from './data';
 
-const HomePage = () => {
+const Homepage = () => {
   useEffect(() => {
     // 👇️ scroll to top on page load
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
@@ -17,4 +17,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default Homepage;
