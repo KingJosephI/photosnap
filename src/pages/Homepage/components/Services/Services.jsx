@@ -9,6 +9,7 @@ import DesignEveryOneImage__tablet from '../../../../assets/home/tablet/designed
 import DesignEveryOneImage__mobile from '../../../../assets/home/mobile/designed-for-everyone.jpg';
 import whiteArrow from '../../../../assets/shared/desktop/arrow-white.svg';
 import arrow from '../../../../assets/shared/desktop/arrow.svg';
+import mia from '../../../../assets/mia.jpg';
 import './Services.scss';
 
 const Services = () => {
@@ -18,11 +19,17 @@ const Services = () => {
         <picture>
           <source
             media="(min-width:1024px)"
-            srcSet={CreateShareImage__desktop}
+            // srcSet={CreateShareImage__desktop}
+            srcSet={mia}
           />
-          <source media="(min-width:700px)" srcSet={CreateShareImage__tablet} />
+          <source
+            media="(min-width:700px)"
+            // srcSet={CreateShareImage__tablet}
+            srcSet={mia}
+          />
           <img
-            src={CreateShareImage__mobile}
+            // src={CreateShareImage__mobile}
+            src={mia}
             alt="Create and share illustration"
           />
         </picture>
