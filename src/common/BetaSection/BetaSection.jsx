@@ -10,7 +10,7 @@ const BetaSection = () => {
           Get an invite
         </a>
         <div>
-          <img src={whiteArrow} alt="" />
+          <img src={whiteArrow} alt="" loading="lazy" />
         </div>
       </div>
     </section>

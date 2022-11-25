@@ -16,16 +16,17 @@ const Services = () => {
     <section className="services">
       <div className="services__illustration one">
         <picture>
-          <source media="(max-width:700px)" srcSet={CreateShareImage__mobile} />
           <source
-            media="(max-width:1023px)"
-            srcSet={CreateShareImage__tablet}
+            media="(min-width:1024px)"
+            srcSet={CreateShareImage__desktop}
+          />
+          <source media="(min-width:700px)" srcSet={CreateShareImage__tablet} />
+          <img
+            src={CreateShareImage__mobile}
+            alt="Create and share illustration"
+            loading="lazy"
           />
         </picture>
-        <img
-          src={CreateShareImage__desktop}
-          alt="Create and share illustration"
-        />
       </div>
       <div className="services__content first two">
         <h2 className="services__title">Create and share your photo Stories</h2>
@@ -38,7 +39,7 @@ const Services = () => {
             Get an invite
           </a>
           <div>
-            <img src={whiteArrow} alt="" />
+            <img src={whiteArrow} alt="" loading="lazy" />
           </div>
         </div>
       </div>
@@ -46,18 +47,19 @@ const Services = () => {
       <div className="services__illustration three">
         <picture>
           <source
-            media="(max-width:700px)"
-            srcSet={BeautifulStoryImage__mobile}
+            media="(min-width:1024px)"
+            srcSet={BeautifulStoryImage__desktop}
           />
           <source
-            media="(max-width:1023px)"
+            media="(min-width:700px)"
             srcSet={BeautifulStoryImage__tablet}
           />
+          <img
+            src={BeautifulStoryImage__mobile}
+            alt="Create and share illustration"
+            loading="lazy"
+          />
         </picture>
-        <img
-          src={BeautifulStoryImage__desktop}
-          alt="Create and share illustration"
-        />
       </div>
       <div className="services__content four">
         <h2 className="services__title">Beautiful stories every time</h2>
@@ -69,7 +71,7 @@ const Services = () => {
         <div className="services__view-stories cta">
           <a href="#!">View the stories</a>
           <div className="footer__arrow">
-            <img src={arrow} alt="" />
+            <img src={arrow} alt="" loading="lazy" />
           </div>
         </div>
       </div>
@@ -77,18 +79,19 @@ const Services = () => {
       <div className="services__illustration five">
         <picture>
           <source
-            media="(max-width:700px)"
-            srcSet={DesignEveryOneImage__mobile}
+            media="(min-width:1024px)"
+            srcSet={DesignEveryOneImage__desktop}
           />
           <source
-            media="(max-width:1023px)"
+            media="(max-width:700px)"
             srcSet={DesignEveryOneImage__tablet}
           />
+          <img
+            src={DesignEveryOneImage__mobile}
+            alt="Create and share illustration"
+            loading="lazy"
+          />
         </picture>
-        <img
-          src={DesignEveryOneImage__desktop}
-          alt="Create and share illustration"
-        />
       </div>
       <div className="services__content six">
         <h2 className="services__title">Designed for everyone</h2>
@@ -100,7 +103,7 @@ const Services = () => {
         <div className="services__view-stories cta">
           <a href="#!">View the stories</a>
           <div className="footer__arrow">
-            <img src={arrow} alt="" />
+            <img src={arrow} alt="" loading="lazy" />
           </div>
         </div>
       </div>

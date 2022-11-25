@@ -6,7 +6,7 @@ const Story = ({ image, title = '', author = '', date = '' }) => {
   return (
     <div className="card">
       <div className="card__image">
-        <img src={image} alt="Illustration" />
+        <img src={image} alt="Illustration" loading="lazy" />
       </div>
       <div className="card__content">
         <span className="card__date">{date}</span>
@@ -17,7 +17,7 @@ const Story = ({ image, title = '', author = '', date = '' }) => {
             Read Story
           </a>
           <div>
-            <img src={whiteArrow} alt="" />
+            <img src={whiteArrow} alt="" loading="lazy" />
           </div>
         </div>
       </div>

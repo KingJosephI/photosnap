@@ -1,15 +1,13 @@
 import { NavLink } from 'react-router-dom';
 import logo from '../../../../assets/shared/desktop/logo-footer.svg';
-// import arrow from '../../assets/shared/desktop/arrow-white.svg';
 import arrow from '../../../../assets/shared/desktop/arrow-white.svg';
-
 import './Footer.scss';
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__logo">
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="logo" loading="lazy" />
       </div>
 
       <div className="footer__social-media">
@@ -58,7 +56,7 @@ const Footer = () => {
           Get an invite
         </a>
         <div className="footer__arrow">
-          <img src={arrow} alt="" />
+          <img src={arrow} alt="" loading="lazy" />
         </div>
       </div>
 

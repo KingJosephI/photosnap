@@ -10,7 +10,7 @@ const Header = () => {
           to="/"
           style={({ isActive }) => ({ color: isActive ? 'grey' : 'black' })}
         >
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="logo" loading="lazy" />
         </NavLink>
       </div>
 
