@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { PricingToggleContext } from '../../../../../context/PricingToggleContext';
+import { PricingToggleContext } from '../../../../../../context/PricingToggleContext';
 import './Toggle.scss';
 
 const Toggle = () => {
