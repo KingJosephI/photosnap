@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Services } from './components/';
+import { Services } from './components';
 import { Layout, Stories, Features } from '../../common';
 import { stories, features } from './data';
 
