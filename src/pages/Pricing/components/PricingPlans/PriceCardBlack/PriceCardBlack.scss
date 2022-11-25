@@ -35,3 +35,11 @@
     }
   }
 }
+
+@media screen and (min-width: rem(700)) and (max-width: rem(1023)) {
+  .card-black {
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
