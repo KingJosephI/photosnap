@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
-import { Services } from './components/';
+import { Services } from './components';
 import { Layout, Stories, Features } from '../../common';
 import { stories, features } from './data';
 
-const Homepage = () => {
+const HomePage = () => {
   useEffect(() => {
     // 👇️ scroll to top on page load
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
@@ -17,4 +17,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default HomePage;
