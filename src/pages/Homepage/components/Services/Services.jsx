@@ -24,7 +24,6 @@ const Services = () => {
           <img
             src={CreateShareImage__mobile}
             alt="Create and share illustration"
-            loading="lazy"
           />
         </picture>
       </div>
@@ -57,7 +56,6 @@ const Services = () => {
           <img
             src={BeautifulStoryImage__mobile}
             alt="Create and share illustration"
-            loading="lazy"
           />
         </picture>
       </div>
@@ -89,7 +87,6 @@ const Services = () => {
           <img
             src={DesignEveryOneImage__mobile}
             alt="Create and share illustration"
-            loading="lazy"
           />
         </picture>
       </div>
