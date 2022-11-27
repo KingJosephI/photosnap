@@ -55,6 +55,22 @@
       flex-direction: column;
       justify-content: center;
       padding-inline: rem(112);
+      position: relative;
+
+      &::before {
+        position: absolute;
+        top: 22%;
+        left: 0;
+        bottom: 30%;
+        content: '';
+        width: rem(160);
+        height: rem(8);
+        background: $main-accent;
+        background-repeat: no-repeat;
+
+        transform-origin: left;
+        transform: rotate(90deg);
+      }
     }
 
     &__title {
@@ -70,6 +86,29 @@
     &__content {
       padding-inline: rem(112);
       width: 40%;
+
+      &::before {
+        top: 30%;
+        left: 0;
+        bottom: 30%;
+        content: '';
+        width: rem(190);
+        height: rem(8);
+        // position: absolute;
+        // content: '';
+        // width: rem(200);
+        // height: rem(8);
+        // background: green;
+        // background: $main-accent;
+        // background-repeat: no-repeat;
+
+        // top: 30%;
+        // left: 0;
+        // bottom: 20%;
+
+        // transform-origin: left;
+        // transform: rotate(90deg);
+      }
     }
 
     &__illustration {

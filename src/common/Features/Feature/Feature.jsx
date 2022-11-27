@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import './Features.scss';
+import './Feature.scss';
 
 const Feature = ({ title = '', description = '', image = '' }) => {
   return (
@@ -7,8 +7,10 @@ const Feature = ({ title = '', description = '', image = '' }) => {
       <div className="feature__image">
         <img src={image} alt={title} loading="lazy" />
       </div>
-      <h2 className="feature__title">{title}</h2>
-      <p className="feature__description">{description}</p>
+      <div className="feature__content">
+        <h2 className="feature__title">{title}</h2>
+        <p className="feature__description">{description}</p>
+      </div>
     </div>
   );
 };

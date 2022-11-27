@@ -84,6 +84,24 @@
       justify-content: center;
       padding-inline: rem(54);
     }
+    &__content.first {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: '';
+        width: rem(320);
+        height: rem(8);
+        background: green;
+        background: $main-accent;
+        background-repeat: no-repeat;
+        top: 25%;
+        left: 0;
+        bottom: 20%;
+        transform-origin: left;
+        transform: rotate(90deg);
+      }
+    }
     &__illustration {
       width: 40%;
     }

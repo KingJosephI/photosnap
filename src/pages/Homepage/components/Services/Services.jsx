@@ -9,7 +9,6 @@ import DesignEveryOneImage__tablet from '../../../../assets/home/tablet/designed
 import DesignEveryOneImage__mobile from '../../../../assets/home/mobile/designed-for-everyone.jpg';
 import whiteArrow from '../../../../assets/shared/desktop/arrow-white.svg';
 import arrow from '../../../../assets/shared/desktop/arrow.svg';
-import mia from '../../../../assets/mia.jpg';
 import './Services.scss';
 
 const Services = () => {
@@ -19,23 +18,19 @@ const Services = () => {
         <picture>
           <source
             media="(min-width:1024px)"
-            // srcSet={CreateShareImage__desktop}
-            srcSet={mia}
+            srcSet={CreateShareImage__desktop}
           />
-          <source
-            media="(min-width:700px)"
-            // srcSet={CreateShareImage__tablet}
-            srcSet={mia}
-          />
+          <source media="(min-width:700px)" srcSet={CreateShareImage__tablet} />
           <img
-            // src={CreateShareImage__mobile}
-            src={mia}
+            src={CreateShareImage__mobile}
             alt="Create and share illustration"
           />
         </picture>
       </div>
       <div className="services__content first two">
-        <h2 className="services__title">I love Mia Mbombo Mianda 💖</h2>
+        <h2 className="services__title">
+          Create and share your photo stories.
+        </h2>
         <p className="services__description">
           Photosnap is a platform for photographers and visual storytellers. We
           make it easy to share photos, tell stories and connect with others.

@@ -14,7 +14,7 @@ const Header = () => {
         </NavLink>
       </div>
 
-      <nav className="header__nav">
+      <nav className="header__navigation">
         <ul className="header__menu">
           <li>
             <NavLink
@@ -52,8 +52,8 @@ const Header = () => {
       </a>
 
       <button className="header__hamburger">
-        <span></span>
-        <span></span>
+        {/* <span></span>
+        <span></span> */}
       </button>
     </header>
   );
