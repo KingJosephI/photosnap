@@ -15,20 +15,17 @@
     letter-spacing: rem(1.67);
     color: lighten($black, 40%);
   }
-  // width: 100%;
+
   th {
     text-align: left;
-    // width: 100%;
     padding-block-start: rem(20);
   }
   td {
     padding: rem(10) rem(30);
     padding-inline-start: 0;
-    // width: cal(100%/3);
-    // text-align: center;
     width: calc(100vw / 3);
-    // background-color: green;
   }
+
   img {
     width: rem(16);
   }

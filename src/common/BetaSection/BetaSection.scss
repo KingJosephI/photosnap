@@ -36,40 +36,59 @@
 
 @media screen and (min-width: rem(700)) {
   .beta {
-    padding: rem(77) rem(39);
+    padding: 0;
     background-image: url('../../assets/shared/tablet/bg-beta.jpg');
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    position: relative;
 
     &__title {
-      padding-block-start: 0;
+      padding-inline-start: rem(39);
+      padding-block: rem(76);
+
+      width: 100%;
 
       &::before {
         content: none;
+      }
+
+      &::before {
+        position: absolute;
+        content: '';
+        height: rem(8);
+        background: $main-accent;
+        width: 51.5%;
+        transform: rotate(90deg);
+        transform-origin: left;
+        top: -1%;
+        bottom: 0;
+        left: 0;
       }
     }
 
     .cta {
       justify-self: end;
+      padding-inline-end: rem(39);
     }
   }
 }
 
 @media screen and (min-width: rem(1024)) {
   .beta {
-    padding-inline: rem(165);
     background-image: url('../../assets/shared/desktop/bg-beta.jpg');
 
     &__title {
       font-size: rem(40);
       line-height: rem(48);
       letter-spacing: rem(4.17);
+      padding-inline-start: rem(165);
+      width: 85%;
     }
 
-    // &::before {
-    //   width: 0;
-    // }
+    .cta {
+      padding-inline-end: rem(165);
+    }
   }
 }
