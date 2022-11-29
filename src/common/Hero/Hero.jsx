@@ -19,9 +19,6 @@ Hero.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   illustration: PropTypes.string,
-  // desktopImage: PropTypes.string,
-  // tabletImage: PropTypes.string,
-  // mobileImage: PropTypes.string,
 };
 
 export default Hero;

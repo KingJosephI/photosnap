@@ -2,6 +2,7 @@
 
 .card {
   position: relative;
+  transition: 0.3s;
 
   &__image img {
     display: block;
@@ -37,5 +38,21 @@
   &__read-story {
     padding-block-start: rem(20);
     justify-content: space-between;
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(rem(-24));
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: rem(6);
+      background: $main-accent;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
   }
 }

@@ -55,6 +55,19 @@
       flex-direction: column;
       justify-content: center;
       padding-inline: rem(112);
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        inset: 22% auto 30% 0;
+        width: rem(160);
+        height: rem(8);
+        background: $main-accent;
+        background-repeat: no-repeat;
+        transform-origin: left;
+        transform: rotate(90deg);
+      }
     }
 
     &__title {
@@ -70,6 +83,11 @@
     &__content {
       padding-inline: rem(112);
       width: 40%;
+
+      &::before {
+        top: 30%;
+        width: rem(190);
+      }
     }
 
     &__illustration {

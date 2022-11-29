@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import Story from './Story/Story';
 import './Stories.scss';
 
@@ -15,6 +16,10 @@ const Stories = ({ data }) => {
       ))}
     </section>
   );
+};
+
+Stories.propTypes = {
+  data: PropTypes.array,
 };
 
 export default Stories;

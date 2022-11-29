@@ -14,13 +14,9 @@
   }
 }
 
-@media screen and (min-width: rem(700)) {
-  .prices {
-  }
-}
 @media screen and (min-width: rem(1024)) {
   .prices {
-    padding: rem(165) rem(120);
+    padding: rem(120) rem(165);
 
     &__plans {
       flex-direction: row;
