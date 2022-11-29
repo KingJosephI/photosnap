@@ -1,6 +1,6 @@
-const InviteButton = ({ className, ...props }) => {
+const InviteButton = ({ ...props }) => {
   return (
-    <a href="#!" className={className} {...props}>
+    <a href="#!" {...props}>
       Get an invite
     </a>
   );

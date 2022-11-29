@@ -1,6 +1,7 @@
+import InviteButton from '../InviteButton/InviteButton';
 import MenuItem from './MenuItem';
 
-const NavBar = () => {
+const NavBar = ({ ...props }) => {
   const menu = [
     {
       id: 1,
@@ -19,12 +20,13 @@ const NavBar = () => {
     },
   ];
   return (
-    <nav className="header__navigation">
+    <nav {...props}>
       <ul className="header__menu">
         {menu.map(({ name, path, id }) => (
           <MenuItem name={name} path={path} key={id} />
         ))}
       </ul>
+      <InviteButton className="header__invite-button" />
     </nav>
   );
 };

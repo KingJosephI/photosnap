@@ -1,8 +1,8 @@
 import { NavLink } from 'react-router-dom';
 
-const Logo = ({ logo, className, ...props }) => {
+const Logo = ({ logo, ...props }) => {
   return (
-    <div className={className} {...props}>
+    <div {...props}>
       <NavLink
         to="/"
         style={({ isActive }) => ({

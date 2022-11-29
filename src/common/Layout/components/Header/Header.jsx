@@ -1,4 +1,4 @@
-import { Logo, NavBar, InviteButton } from './components';
+import { Logo, NavBar, Hamburger } from './components';
 import logo from '../../../../assets/shared/desktop/logo.svg';
 import './Header.scss';
 
@@ -6,9 +6,8 @@ const Header = () => {
   return (
     <header className="header">
       <Logo logo={logo} className="header__logo" />
-      <NavBar />
-      <InviteButton className="header__invite-button" />
-      <button className="header__hamburger"></button>
+      <NavBar className="header__navigation" />
+      <Hamburger className="header__hamburger" />
     </header>
   );
 };
